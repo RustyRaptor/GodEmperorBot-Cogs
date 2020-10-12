@@ -1,10 +1,8 @@
 {
     "author" : ["RustyRaptor"],
     "install_msg" : "Thanks for installing my cogs. Have fun",
-    "name" : "testcog",
+    "name" : "GodEmperorBot",
     "short" : "Does a lot of weird stuff",
-    "requirements" : ["youtube_dl"],
     "description" : "here's a full description",
-    "permissions" : ["Administrator"],
     "tags" : ["doge"]
 }
