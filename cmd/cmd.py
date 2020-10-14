@@ -3,7 +3,7 @@ import os
 
 
 def echo(input):
-    return os.popen('echo' + input).read()
+    return os.popen('echo ' + input).read()
 
 
 programs = {
