@@ -1,0 +1,10 @@
+{
+    "author" : ["RustyRaptor"],
+    "install_msg" : "Thanks for installing my cogs. Have fun",
+    "name" : "cmd",
+    "short" : "runs linux commands",
+    "requirements" : ["youtube_dl"],
+    "description" : "This is a massive security issue but wwho gives a fuck",
+    "permissions" : ["Administrator"],
+    "tags" : ["doge"]
+}
