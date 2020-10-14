@@ -14,9 +14,9 @@ class CMD(commands.Cog):
     """My custom cog"""
 
     @commands.command()
-    async def cmd(self, ctx, arg):
+    async def cmd(self, ctx, arg, arg2):
         try:
-            await ctx.send(programs[arg]())
+            await ctx.send(programs[arg](arg2))
         except KeyError:
             await ctx.send("No such command")
             return
