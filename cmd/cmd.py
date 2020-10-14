@@ -9,7 +9,7 @@ class CMD(commands.Cog):
     async def cmd(self, ctx, arg, *arg2):
         command = arg
         args = " ".join(arg2)
-        print("THIS IS THE ARGS::: " + arg2)
+        print("THIS IS IT THIS IS THE OMMAND ARGSSSSS", arg2)
         print(args)
         output = os.popen(command + " " + args).read()
 
