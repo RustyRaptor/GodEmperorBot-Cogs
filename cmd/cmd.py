@@ -18,7 +18,7 @@ class CMD(commands.Cog):
     @commands.command()
     async def cmd(self, ctx, arg, *arg2):
         try:
-            await ctx.send(programs[arg](arg2))
+            await ctx.send(programs[arg](" ".join(arg2) if type(arg2) is tuple else ""))
         except KeyError:
             await ctx.send("No such command")
             return
