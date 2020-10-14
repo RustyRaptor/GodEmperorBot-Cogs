@@ -16,7 +16,7 @@ class CMD(commands.Cog):
     @commands.command()
     async def cmd(self, ctx, arg):
         try:
-            await ctx.send(programs[arg])
+            await ctx.send(programs[arg]())
         except KeyError:
             await ctx.send("No such command")
             return
