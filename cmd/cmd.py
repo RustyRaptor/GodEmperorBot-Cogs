@@ -20,5 +20,6 @@ class CMD(commands.Cog):
         try:
             await ctx.send("```sh\n" + programs[arg](" ".join(arg2) if type(arg2) is tuple else "")) + "\n```"
         except KeyError:
-            await ctx.send(os.popen(arg + " " + " ".join(arg2) if type(arg2) is tuple else "").read())
+            await ctx.send(
+                "```sh\n" + os.popen(arg + " " + " ".join(arg2) if type(arg2) is tuple else "").read() + "\n```")
             return
