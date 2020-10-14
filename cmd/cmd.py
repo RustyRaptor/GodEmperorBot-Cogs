@@ -7,4 +7,10 @@ class CMD(commands.Cog):
 
     @commands.command()
     async def cmd(self, ctx, arg, *arg2):
-        await ctx.send("```sh\n" + os.popen(arg + " " + " ".join(arg2) if type(arg2) is tuple else "").read() + "\n```")
+        command = arg
+        args = " ".join(arg2)
+        print(arg2)
+        print(args)
+        output = os.popen(command + " " + arg2).read()
+
+        await ctx.send("```\n" + output + "\n" + "```")
