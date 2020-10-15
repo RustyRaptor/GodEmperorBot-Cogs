@@ -8,8 +8,8 @@ class CMD(commands.Cog):
     """My custom cog"""
 
     @commands.guild_only()
-    @checks.guildowner()
-    @commands.group()
+    @checks.is_owner()
+    @commands.command()
     async def cmd(self, ctx, arg, *arg2):
         command = arg
         args = " ".join(arg2)
