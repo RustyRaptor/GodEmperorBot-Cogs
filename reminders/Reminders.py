@@ -26,5 +26,5 @@ class Reminders(commands.Cog):
         print("ah fuck here we go")
         pause.until(dt)
         print("ah fuck here we go 2")
-        ctx.send("{author.mention}REMINDER: " + str(label))
+        await ctx.send("{author.mention}REMINDER: " + str(label))
         print("ah fuck here we go 3")
