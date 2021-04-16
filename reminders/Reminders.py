@@ -20,5 +20,5 @@ class Reminders(commands.Cog):
                 "{author.mention} please enter remind time as "
                 "year/month/day/hour/minute")
             return
-        await pause.until(dt)
-        await ctx.send("{author.mention}REMINDER: " + str(label))
+        pause.until(dt)
+        ctx.send("{author.mention}REMINDER: " + str(label))
