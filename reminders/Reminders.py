@@ -67,7 +67,7 @@ class Reminders(commands.Cog):
                 # 'logarithmic' sleeping to minimize loop iterations
                 await asyncio.sleep(diff / 2)
         print("ah fuck here we go 2")
-        await ctx.send("{author.mention}REMINDER: " + str(label))
+        await ctx.send(f'{ctx.message.author.mention}REMINDER: {str(label)}')
         print("ah fuck here we go 3")
 
 
